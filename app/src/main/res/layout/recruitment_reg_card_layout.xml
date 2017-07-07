@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/direction_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    card_view:cardBackgroundColor="#feb309"
+    card_view:cardElevation="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp">
+
+            <TextView
+                android:id="@+id/rec_post_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="Recruitment Post"
+                android:textColor="#1d4a93"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rec_post_name_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rec_post_name"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reg_form"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rec_post_name_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="Application Form"
+                android:textColor="#1d4a93"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reg_form">
+
+                <TextView
+                    android:id="@+id/name_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="left"
+                    android:padding="5dp"
+                    android:text="Name*"
+                    android:textColor="#1d4a93"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/name_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name_heading"
+                    android:background="#ffffff"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:hint="Name"
+                    android:padding="5dp"
+                    android:textColor="#000000"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/phone_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name_content"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="left"
+                    android:padding="5dp"
+                    android:text="Mobile*"
+                    android:textColor="#1d4a93"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/phone_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/phone_heading"
+                    android:background="#ffffff"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:hint="Mobile No. (10 Digits)"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:padding="5dp"
+                    android:textColor="#000000"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/email_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/phone_content"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="left"
+                    android:padding="5dp"
+                    android:text="Email*"
+                    android:textColor="#1d4a93"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/email_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/email_heading"
+                    android:background="#ffffff"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:hint="Email ID"
+                    android:inputType="textEmailAddress"
+                    android:padding="5dp"
+                    android:textColor="#000000"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/msg_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/email_content"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="left"
+                    android:padding="5dp"
+                    android:text="Other Info"
+                    android:textColor="#1d4a93"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/msg_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@id/msg_heading"
+                    android:background="#ffffff"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="top"
+                    android:hint="Other Info"
+                    android:padding="5dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/register_now"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/msg_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:background="#000000"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:onClick="submit_recruitment"
+                    android:padding="5dp"
+                    android:text="Apply Now"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</android.support.v7.widget.CardView>

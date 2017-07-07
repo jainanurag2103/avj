@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_acc_serv"
+            android:title="ACCOUNTING SERVICES" />
+        <item
+            android:id="@+id/menu_it_serv"
+            android:title="IT SERVICES" />
+        <item
+            android:id="@+id/menu_trainings"
+            android:title="TRAININGS" />
+        <item
+            android:id="@+id/menu_rec"
+            android:title="RECRUITMENTS" />
+        <item
+            android:id="@+id/menu_cont_us"
+            android:title="CONTACT US" />
+        <item
+            android:id="@+id/menu_about_us"
+            android:title="ABOUT US" />
+        <item
+            android:id="@+id/menu_dev_prof"
+            android:title="DEVELOPER PROFILE" />
+        <item
+            android:id="@+id/menu_share_app"
+            android:title="SHARE APP" />
+    </group>
+
+</menu>

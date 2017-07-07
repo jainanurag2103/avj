@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AVJ</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="banner_home_footer">ca-app-pub-3120452316793136/4014527605</string>
+</resources>
